@@ -90,6 +90,7 @@ jobs:
           sed -i 's#git.openwrt.org/feed/packages#github.com/openwrt/packages#' feeds.conf
           sed -i 's#git.openwrt.org/project/luci#github.com/openwrt/luci#' feeds.conf
           sed -i 's#git.openwrt.org/feed/telephony#github.com/openwrt/telephony#' feeds.conf
+          sed -i 's#git.openwrt.org/feed/routing#github.com/openwrt/routing#' feeds.conf
           cd -
       - name: Update and Install Packages
         run: |
